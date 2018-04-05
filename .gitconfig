@@ -1,0 +1,50 @@
+[user]
+  name = SAKAGUCHI Takashi
+  email = takashi.sakaguchi@ummm.info
+[core]
+  autocrlf = false
+  safecrlf = false
+  excludesfile = ~/.gitignore
+  editor = vim
+[github]
+  user = hamajyotan
+[color]
+  ui = true
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  grep = auto
+[alias]
+  a = add
+  ad = add
+  aa = add --all
+  br = branch
+  ba = branch -a
+  bm = branch --merged
+  bn = branch --no-merged
+  bc = !git branch --merged | grep -v master | grep -v develop | xargs git branch -D
+  ci = commit
+  cl = clone
+  co = checkout
+  conf = config
+  d = diff --no-prefix
+  di = diff --no-prefix
+  dif = diff --no-prefix
+  dm = diff --no-prefix master
+  dw = diff --no-prefix --color-words
+  dc = diff --no-prefix --cached
+  ds = diff --no-prefix --staged
+  d1 = diff --no-prefix HEAD~
+  d2 = diff --no-prefix HEAD~~
+  d3 = diff --no-prefix HEAD~~~
+  d4 = diff --no-prefix HEAD~~~~
+  d5 = diff --no-prefix HEAD~~~~~
+  d10 = diff --no-prefix HEAD~~~~~~~~~~
+  st = status -sb
+  l = log --graph --oneline --decorate=full
+  lo = log
+  gr = grep
+  gn = grep -n
+  open = browse
+  undo = "!f() { \\\n git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; \\\n}; f"
