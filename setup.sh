@@ -16,6 +16,7 @@ DOTFILES=(
 
 for file in ${DOTFILES[@]}
 do
+  rm $HOME/$file
   ln -s $HOME/.dotfiles/$file $HOME/$file
 done
 
