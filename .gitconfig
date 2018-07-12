@@ -47,4 +47,4 @@
   gr = grep
   gn = grep -n
   open = browse
-  undo = "!f() { \\\n git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; \\\n}; f"
+  undo = "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
