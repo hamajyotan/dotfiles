@@ -24,4 +24,6 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-export DISPLAY=localhost:0.0
+if [ "$DISPLAY" = "" ] ; then
+    export DISPLAY=localhost:0.0
+fi
