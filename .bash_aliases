@@ -10,14 +10,14 @@ alias ll='ls -lF'
 alias la='ls -A'
 alias l='ls -CF'
 
-alias git="hub"
+if which hub >/dev/null 2>&1 then; alias git="hub"; fi
 alias g="git"
 alias vi="vim"
 
 function irb { if which pry >/dev/null 2>&1; then pry $*; else `which irb` $*; fi; }
 function be { if bundle check >/dev/null 2>&1; then bundle exec $*; else $*; fi; }
 
-for cmd in rails rake rspec guard
+for cmd in rails rake rspec
 do
   alias $cmd="be ${cmd}"
 done
@@ -34,4 +34,5 @@ alias up5="cd ../../../../.. && pwd"
 
 alias t="tmux"
 alias web="ruby -rwebrick -e 'WEBrick::HTTPServer.new(DocumentRoot: '\''./'\'', Port: 8000).start'"
+alias u="uim-fep"
 

@@ -41,6 +41,7 @@
   d4 = diff --no-prefix HEAD~~~~
   d5 = diff --no-prefix HEAD~~~~~
   d10 = diff --no-prefix HEAD~~~~~~~~~~
+  f = fetch --all -p
   st = status -sb
   l = log --graph --oneline --decorate=full
   lo = log
