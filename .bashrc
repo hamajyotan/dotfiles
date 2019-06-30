@@ -130,6 +130,7 @@ export HISTIGNORE=?:??:???:pwd:ls\ *:history
 eval "$(direnv hook bash)"
 
 alias tech="cd ~/working/cw/crowdtech/ && pwd"
+alias core="cd ~/working/tottori-univ/coredb/ && pwd"
 
 if [ -d "$HOME/.anyenv" ]; then
   export PATH="$HOME/.anyenv/bin:$PATH"
