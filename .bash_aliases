@@ -10,7 +10,7 @@ alias ll='ls -lF'
 alias la='ls -A'
 alias l='ls -CF'
 
-if which hub >/dev/null 2>&1 then; alias git="hub"; fi
+if which hub >/dev/null 2>&1; then alias git="hub"; fi
 alias g="git"
 alias vi="vim"
 
