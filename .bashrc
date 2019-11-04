@@ -137,3 +137,4 @@ if [ -d "$HOME/.anyenv" ]; then
   eval "$(anyenv init --no-rehash -)"
 fi
 
+umask 0022
